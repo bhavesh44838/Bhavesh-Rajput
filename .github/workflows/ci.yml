@@ -6,10 +6,18 @@ on:
     branches:
       - develop
       - feature/github-actions
+    paths:
+      - '**.py'
+      - 'tests/**'
+      - '.github/workflows/**'
 
   pull_request:
     branches:
       - develop
+    paths:
+      - '**.py'
+      - 'tests/**'
+      - '.github/workflows/**'
 
 jobs:
   lint-test:
